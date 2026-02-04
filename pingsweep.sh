@@ -6,9 +6,10 @@ PingSweep(){
 	for q in {1..200}
 	do
 		curr="$base$q"
-		ping -c 1 $curr >> ping.log
+		ping -n 1 $curr >> ping.log
 	done
 
 }
+PingSweep
 
 
